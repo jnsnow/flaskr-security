@@ -1,9 +1,11 @@
 Flaskr
 ======
 
-The basic blog app built in the Flask `tutorial`_.
+The basic blog app built in the Flask `tutorial`_, amended to use
+flaskr-security-too instead of hand-coding an authentication system.
 
 .. _tutorial: http://flask.pocoo.org/docs/tutorial/
+.. _security: https://flask-security-too.readthedocs.io/en/stable/
 
 
 Install
@@ -14,12 +16,11 @@ you're reading.** You probably want the latest tagged version, but the
 default Git version is the master branch. ::
 
     # clone the repository
-    $ git clone https://github.com/pallets/flask
-    $ cd flask
+    $ git clone https://github.com/jnsnow/flaskr-security
+    $ cd flaskr-security
     # checkout the correct version
     $ git tag  # shows the tagged versions
     $ git checkout latest-tag-found-above
-    $ cd examples/tutorial
 
 Create a virtualenv and activate it::
 
@@ -33,12 +34,6 @@ Or on Windows cmd::
 
 Install Flaskr::
 
-    $ pip install -e .
-
-Or if you are using the master branch, install Flask from source before
-installing Flaskr::
-
-    $ pip install -e ../..
     $ pip install -e .
 
 
